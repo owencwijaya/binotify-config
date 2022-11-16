@@ -7,19 +7,22 @@ services:
       context: .
       dockerfile: Dockerfile
     image: db-binotify:latest
+    volumes:
+      - db:/var/lib/mysql
     environment:
+      MYSQL_USER: tubes
+      MYSQL_PASSWORD: tubes
       MARIADB_ROOT_PASSWORD: root
     ports:
-      - 3312:3312
+      - 8042:3306
 
-  adminer-test:
-    container_name: adminer-test
+  adminer:
+    container_name: adminer
     image: adminer:4.8.1
     environment:
       ADMINER_DEFAULT_SERVER: mariadb
     restart: always
     ports:
-      - 8090:8090
-
+      - 8080:8080
 volumes:
-  databases:
+  db:
