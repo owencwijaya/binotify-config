@@ -159,3 +159,12 @@ INSERT INTO `song` (`judul`, `penyanyi`, `tanggal_terbit`, `genre`, `duration`, 
 ('Langit Abu-abu',	'Tulus',	'2018-04-20',	'Pop',	203,	'assets/songs/Langit Abu-abu.mp3',	'assets/images/album_monokrom.jpg',	3),
 ('Monokrom',	'Tulus',	'2016-11-20',	'Melancholic',	215,	'assets/songs/Monokrom.mp3',	'assets/images/album_monokrom.jpg',	3),
 ('Sewindu',	'Tulus',	'2011-12-20',	'Melancholic',	240,	'assets/songs/Sewindu.mp3',	'assets/images/album_tulus.jpg',	4);
+
+
+CREATE TABLE `subscription`(
+  `creator_id` int NOT NULL,
+  `subscriber_id` int NOT NULL,
+  `status` enum('PENDING', 'ACCEPTED', 'REJECTED') NOT NULL,
+  PRIMARY KEY(`creator_id`, `subscriber_id`),
+  CONSTRAINT `subscription_ibfk_1` FOREIGN KEY (`subscriber_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
