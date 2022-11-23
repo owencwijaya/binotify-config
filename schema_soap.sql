@@ -38,7 +38,7 @@ CREATE TABLE `logging` (
   `endpoint` varchar(256) NOT NULL,
   `requested_at` timestamp NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -62,7 +62,7 @@ CREATE TABLE `subscription` (
   `subscriber_id` int NOT NULL,
   `status` enum('PENDING','ACCEPTED','REJECTED') NOT NULL,
   PRIMARY KEY (`creator_id`,`subscriber_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -84,3 +84,9 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2022-11-20 13:49:46
+
+CREATE TABLE `api_key` (
+    `api_key` VARCHAR(256) NOT NULL,
+    `user_id` int NOT NULL,
+    PRIMARY KEY (`api_key`)
+)

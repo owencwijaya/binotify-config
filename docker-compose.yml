@@ -15,6 +15,7 @@ services:
     ports:
       - 3312:3306
 
+
   adminer:
     container_name: adminer
     image: adminer:4.8.1
