@@ -162,7 +162,7 @@ INSERT INTO `song` (`judul`, `penyanyi`, `tanggal_terbit`, `genre`, `duration`, 
 
 
 CREATE TABLE `subscription`(
-  `creator_id` int NOT NULL,
+  `creator_id` varchar(64) NOT NULL,
   `subscriber_id` int NOT NULL,
   `status` enum('PENDING', 'ACCEPTED', 'REJECTED') NOT NULL,
   PRIMARY KEY(`creator_id`, `subscriber_id`),

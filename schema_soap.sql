@@ -58,7 +58,7 @@ DROP TABLE IF EXISTS `subscription`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `subscription` (
-  `creator_id` int NOT NULL,
+  `creator_id` varchar(64) NOT NULL,
   `subscriber_id` int NOT NULL,
   `status` enum('PENDING','ACCEPTED','REJECTED') NOT NULL,
   PRIMARY KEY (`creator_id`,`subscriber_id`)
