@@ -33,8 +33,8 @@ DROP TABLE IF EXISTS `logging`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `logging` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `description` varchar(256) NOT NULL,
-  `IP` varchar(16) NOT NULL,
+  `desc` varchar(512) NOT NULL,
+  `ip_address` varchar(16) NOT NULL,
   `endpoint` varchar(256) NOT NULL,
   `requested_at` timestamp NOT NULL,
   PRIMARY KEY (`id`)
