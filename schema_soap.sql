@@ -84,9 +84,3 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2022-11-20 13:49:46
-
-CREATE TABLE `api_key` (
-    `api_key` VARCHAR(64) NOT NULL,
-    `user_id` VARCHAR(256) NOT NULL,
-    PRIMARY KEY (`api_key`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
