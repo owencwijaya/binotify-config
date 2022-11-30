@@ -168,3 +168,8 @@ CREATE TABLE `subscription`(
   PRIMARY KEY(`creator_id`, `subscriber_id`),
   CONSTRAINT `subscription_ibfk_1` FOREIGN KEY (`subscriber_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+INSERT INTO `subscription` (`creator_id`, `subscriber_id`) VALUES
+('6387554423332d5aee50e74c', 2),
+('6384c00c17c1599370398db7', 2),
+('638756ae23332d5aee50e76f', 2);

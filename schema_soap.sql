@@ -84,3 +84,7 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2022-11-20 13:49:46
+INSERT INTO `subscription` (`creator_id`, `subscriber_id`) VALUES
+('6387554423332d5aee50e74c', 2),
+('6384c00c17c1599370398db7', 2),
+('638756ae23332d5aee50e76f', 2);
