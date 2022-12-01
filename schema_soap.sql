@@ -86,6 +86,9 @@ UNLOCK TABLES;
 -- Dump completed on 2022-11-20 13:49:46
 
 INSERT INTO `subscription` (`creator_id`, `subscriber_id`, `status`) VALUES
+('6387554423332d5aee50e74c', 1, 'ACCEPTED'),
+('6384c00c17c1599370398db7', 1, 'ACCEPTED'),
+('638756ae23332d5aee50e76f', 1, 'ACCEPTED'),
 ('6387554423332d5aee50e74c', 2, 'PENDING'),
 ('6387554423332d5aee50e74c', 3, 'PENDING'),
 ('6387554423332d5aee50e74c', 4, 'PENDING'),

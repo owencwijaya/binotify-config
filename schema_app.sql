@@ -170,6 +170,9 @@ CREATE TABLE `subscription`(
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 INSERT INTO `subscription` (`creator_id`, `subscriber_id`, `status`) VALUES
+('6387554423332d5aee50e74c', 1, 'ACCEPTED'),
+('6384c00c17c1599370398db7', 1, 'ACCEPTED'),
+('638756ae23332d5aee50e76f', 1, 'ACCEPTED'),
 ('6387554423332d5aee50e74c', 2, 'PENDING'),
 ('6387554423332d5aee50e74c', 3, 'PENDING'),
 ('6387554423332d5aee50e74c', 4, 'PENDING'),
