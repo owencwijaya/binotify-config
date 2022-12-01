@@ -60,8 +60,8 @@ DROP TABLE IF EXISTS `subscription`;
 CREATE TABLE `subscription` (
   `creator_id` varchar(64) NOT NULL,
   `subscriber_id` int NOT NULL,
-  `status` enum('PENDING','ACCEPTED','REJECTED') NOT NULL
-  -- PRIMARY KEY (`creator_id`,`subscriber_id`)
+  `status` enum('PENDING','ACCEPTED','REJECTED') NOT NULL,
+  PRIMARY KEY (`creator_id`,`subscriber_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 

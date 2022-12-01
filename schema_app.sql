@@ -165,7 +165,7 @@ CREATE TABLE `subscription`(
   `creator_id` varchar(64) NOT NULL,
   `subscriber_id` int NOT NULL,
   `status` enum('PENDING', 'ACCEPTED', 'REJECTED') NOT NULL,
-  -- PRIMARY KEY(`creator_id`, `subscriber_id`),
+  PRIMARY KEY(`creator_id`, `subscriber_id`),
   CONSTRAINT `subscription_ibfk_1` FOREIGN KEY (`subscriber_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
