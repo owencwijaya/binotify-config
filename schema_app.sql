@@ -47,6 +47,31 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
+INSERT INTO `user` (`name`, `email`, `password`, `username`, `isadmin`) 
+VALUES ('Admin', 'admin@binotify.com', '7dd12f3a9afa0282a575b8ef99dea2a0c1becb51', 'admin', true);
+
+INSERT INTO `user` (`name`, `email`, `password`, `username`, `isadmin`) VALUES
+('User 01', 'user01@binotify.com', '5f108ff6214b4b6bf0be36f3f1b4ae4f2f348064', 'user01', false),
+('User 02', 'user02@binotify.com', '5f108ff6214b4b6bf0be36f3f1b4ae4f2f348064', 'user02', false),
+('User 03', 'user03@binotify.com', '5f108ff6214b4b6bf0be36f3f1b4ae4f2f348064', 'user03', false),
+('User 04', 'user04@binotify.com', '5f108ff6214b4b6bf0be36f3f1b4ae4f2f348064', 'user04', false),
+('User 05', 'user05@binotify.com', '5f108ff6214b4b6bf0be36f3f1b4ae4f2f348064', 'user05', false),
+('User 06', 'user06@binotify.com', '5f108ff6214b4b6bf0be36f3f1b4ae4f2f348064', 'user06', false),
+('User 07', 'user07@binotify.com', '5f108ff6214b4b6bf0be36f3f1b4ae4f2f348064', 'user07', false),
+('User 08', 'user08@binotify.com', '5f108ff6214b4b6bf0be36f3f1b4ae4f2f348064', 'user08', false),
+('User 09', 'user09@binotify.com', '5f108ff6214b4b6bf0be36f3f1b4ae4f2f348064', 'user09', false),
+('User 10', 'user10@binotify.com', '5f108ff6214b4b6bf0be36f3f1b4ae4f2f348064', 'user10', false),
+('User 11', 'user11@binotify.com', '5f108ff6214b4b6bf0be36f3f1b4ae4f2f348064', 'user11', false),
+('User 12', 'user12@binotify.com', '5f108ff6214b4b6bf0be36f3f1b4ae4f2f348064', 'user12', false),
+('User 13', 'user13@binotify.com', '5f108ff6214b4b6bf0be36f3f1b4ae4f2f348064', 'user13', false),
+('User 14', 'user14@binotify.com', '5f108ff6214b4b6bf0be36f3f1b4ae4f2f348064', 'user14', false),
+('User 15', 'user15@binotify.com', '5f108ff6214b4b6bf0be36f3f1b4ae4f2f348064', 'user15', false),
+('User 16', 'user16@binotify.com', '5f108ff6214b4b6bf0be36f3f1b4ae4f2f348064', 'user16', false),
+('User 17', 'user17@binotify.com', '5f108ff6214b4b6bf0be36f3f1b4ae4f2f348064', 'user17', false),
+('User 18', 'user18@binotify.com', '5f108ff6214b4b6bf0be36f3f1b4ae4f2f348064', 'user18', false),
+('User 19', 'user19@binotify.com', '5f108ff6214b4b6bf0be36f3f1b4ae4f2f348064', 'user19', false),
+('User 20', 'user20@binotify.com', '5f108ff6214b4b6bf0be36f3f1b4ae4f2f348064', 'user20', false);
+
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -75,6 +100,13 @@ CREATE TABLE `album` (
 
 LOCK TABLES `album` WRITE;
 /*!40000 ALTER TABLE `album` DISABLE KEYS */;
+INSERT INTO `album` (`judul`, `penyanyi`, `total_duration`, `image_path`, `tanggal_terbit`, `genre`) VALUES
+('Gajah',	'Tulus',	1007,	'assets/images/album_gajah.jpg',	'2014-02-19',	'Pop'),
+('Manusia',	'Tulus',	1230,	'assets/images/album_manusia.jpg',	'2022-03-03',	'Romance'),
+('Monokrom',	'Tulus',	1104,	'assets/images/album_monokrom.jpg',	'2016-08-03',	'Pop'),
+('Tulus',	'Tulus',	240,	'assets/images/album_tulus.jpg',	'2011-12-20',	'Romance');
+
+
 /*!40000 ALTER TABLE `album` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -107,41 +139,6 @@ CREATE TABLE `song` (
 
 LOCK TABLES `song` WRITE;
 /*!40000 ALTER TABLE `song` DISABLE KEYS */;
-/*!40000 ALTER TABLE `song` ENABLE KEYS */;
-UNLOCK TABLES;
-
-INSERT INTO `user` (`name`, `email`, `password`, `username`, `isadmin`) 
-VALUES ('Admin', 'admin@binotify.com', '7dd12f3a9afa0282a575b8ef99dea2a0c1becb51', 'admin', true);
-
-INSERT INTO `user` (`name`, `email`, `password`, `username`, `isadmin`) VALUES
-('User 01', 'user01@binotify.com', '5f108ff6214b4b6bf0be36f3f1b4ae4f2f348064', 'user01', false),
-('User 02', 'user02@binotify.com', '5f108ff6214b4b6bf0be36f3f1b4ae4f2f348064', 'user02', false),
-('User 03', 'user03@binotify.com', '5f108ff6214b4b6bf0be36f3f1b4ae4f2f348064', 'user03', false),
-('User 04', 'user04@binotify.com', '5f108ff6214b4b6bf0be36f3f1b4ae4f2f348064', 'user04', false),
-('User 05', 'user05@binotify.com', '5f108ff6214b4b6bf0be36f3f1b4ae4f2f348064', 'user05', false),
-('User 06', 'user06@binotify.com', '5f108ff6214b4b6bf0be36f3f1b4ae4f2f348064', 'user06', false),
-('User 07', 'user07@binotify.com', '5f108ff6214b4b6bf0be36f3f1b4ae4f2f348064', 'user07', false),
-('User 08', 'user08@binotify.com', '5f108ff6214b4b6bf0be36f3f1b4ae4f2f348064', 'user08', false),
-('User 09', 'user09@binotify.com', '5f108ff6214b4b6bf0be36f3f1b4ae4f2f348064', 'user09', false),
-('User 10', 'user10@binotify.com', '5f108ff6214b4b6bf0be36f3f1b4ae4f2f348064', 'user10', false),
-('User 11', 'user11@binotify.com', '5f108ff6214b4b6bf0be36f3f1b4ae4f2f348064', 'user11', false),
-('User 12', 'user12@binotify.com', '5f108ff6214b4b6bf0be36f3f1b4ae4f2f348064', 'user12', false),
-('User 13', 'user13@binotify.com', '5f108ff6214b4b6bf0be36f3f1b4ae4f2f348064', 'user13', false),
-('User 14', 'user14@binotify.com', '5f108ff6214b4b6bf0be36f3f1b4ae4f2f348064', 'user14', false),
-('User 15', 'user15@binotify.com', '5f108ff6214b4b6bf0be36f3f1b4ae4f2f348064', 'user15', false),
-('User 16', 'user16@binotify.com', '5f108ff6214b4b6bf0be36f3f1b4ae4f2f348064', 'user16', false),
-('User 17', 'user17@binotify.com', '5f108ff6214b4b6bf0be36f3f1b4ae4f2f348064', 'user17', false),
-('User 18', 'user18@binotify.com', '5f108ff6214b4b6bf0be36f3f1b4ae4f2f348064', 'user18', false),
-('User 19', 'user19@binotify.com', '5f108ff6214b4b6bf0be36f3f1b4ae4f2f348064', 'user19', false),
-('User 20', 'user20@binotify.com', '5f108ff6214b4b6bf0be36f3f1b4ae4f2f348064', 'user20', false);
-
-
-INSERT INTO `album` (`judul`, `penyanyi`, `total_duration`, `image_path`, `tanggal_terbit`, `genre`) VALUES
-('Gajah',	'Tulus',	1007,	'assets/images/album_gajah.jpg',	'2014-02-19',	'Pop'),
-('Manusia',	'Tulus',	1230,	'assets/images/album_manusia.jpg',	'2022-03-03',	'Romance'),
-('Monokrom',	'Tulus',	1104,	'assets/images/album_monokrom.jpg',	'2016-08-03',	'Pop'),
-('Tulus',	'Tulus',	240,	'assets/images/album_tulus.jpg',	'2011-12-20',	'Romance');
-
 INSERT INTO `song` (`judul`, `penyanyi`, `tanggal_terbit`, `genre`, `duration`, `audio_path`, `image_path`, `album_id`) VALUES
 ('Baru',	'Tulus',	'2014-04-22',	'Romance',	178,	'assets/songs/Baru.mp3',	'assets/images/album_gajah.jpg',	1),
 ('Sepatu',	'Tulus',	'2013-08-22',	'Melancholic',	219,	'assets/songs/Sepatu.mp3',	'assets/images/album_gajah.jpg',	1),
@@ -159,6 +156,8 @@ INSERT INTO `song` (`judul`, `penyanyi`, `tanggal_terbit`, `genre`, `duration`, 
 ('Langit Abu-abu',	'Tulus',	'2018-04-20',	'Pop',	203,	'assets/songs/Langit Abu-abu.mp3',	'assets/images/album_monokrom.jpg',	3),
 ('Monokrom',	'Tulus',	'2016-11-20',	'Melancholic',	215,	'assets/songs/Monokrom.mp3',	'assets/images/album_monokrom.jpg',	3),
 ('Sewindu',	'Tulus',	'2011-12-20',	'Melancholic',	240,	'assets/songs/Sewindu.mp3',	'assets/images/album_tulus.jpg',	4);
+/*!40000 ALTER TABLE `song` ENABLE KEYS */;
+UNLOCK TABLES;
 
 
 CREATE TABLE `subscription`(
